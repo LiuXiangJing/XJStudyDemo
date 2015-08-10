@@ -21,6 +21,15 @@
 		1DC7507D1B68DEE100366AA9 /* XJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7507C1B68DEE100366AA9 /* XJBaseViewController.m */; };
 		1DC750811B68DF0900366AA9 /* XJAddDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7507F1B68DF0900366AA9 /* XJAddDataViewController.m */; };
 		1DC750821B68DF0900366AA9 /* XJAddDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC750801B68DF0900366AA9 /* XJAddDataViewController.xib */; };
+		1DEDACD51B783BE7002FA6EF /* XJAlertViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDACD31B783BE7002FA6EF /* XJAlertViewViewController.m */; };
+		1DEDACD61B783BE7002FA6EF /* XJAlertViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DEDACD41B783BE7002FA6EF /* XJAlertViewViewController.xib */; };
+		1DEDACDA1B784CAE002FA6EF /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDACD91B784CAE002FA6EF /* BaseRequestService.m */; };
+		1DEDACDD1B787CC1002FA6EF /* BaseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDACDC1B787CC1002FA6EF /* BaseDataSource.m */; };
+		1DEDACE01B788328002FA6EF /* XJTestDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDACDF1B788328002FA6EF /* XJTestDataSource.m */; };
+		1DEDACE41B78873E002FA6EF /* XJTextRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDACE21B78873E002FA6EF /* XJTextRequestViewController.m */; };
+		1DEDACE51B78873E002FA6EF /* XJTextRequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DEDACE31B78873E002FA6EF /* XJTextRequestViewController.xib */; };
+		1DEDACE91B7898E5002FA6EF /* UIColor+XJHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDACE81B7898E5002FA6EF /* UIColor+XJHexColor.m */; };
+		1DEDACEC1B789A01002FA6EF /* NSString+XJString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDACEB1B789A01002FA6EF /* NSString+XJString.m */; };
 		1DF231441B69BB85004AAAE7 /* XJDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF231431B69BB85004AAAE7 /* XJDataSource.m */; };
 		1DF231541B69C077004AAAE7 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF231531B69C077004AAAE7 /* UserInfo.m */; };
 		1DF231571B69C078004AAAE7 /* UserDetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF231561B69C078004AAAE7 /* UserDetailInfo.m */; };
@@ -80,6 +89,22 @@
 		1DC7507E1B68DF0900366AA9 /* XJAddDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJAddDataViewController.h; sourceTree = "<group>"; };
 		1DC7507F1B68DF0900366AA9 /* XJAddDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJAddDataViewController.m; sourceTree = "<group>"; };
 		1DC750801B68DF0900366AA9 /* XJAddDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJAddDataViewController.xib; sourceTree = "<group>"; };
+		1DEDACD21B783BE7002FA6EF /* XJAlertViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJAlertViewViewController.h; sourceTree = "<group>"; };
+		1DEDACD31B783BE7002FA6EF /* XJAlertViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJAlertViewViewController.m; sourceTree = "<group>"; };
+		1DEDACD41B783BE7002FA6EF /* XJAlertViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJAlertViewViewController.xib; sourceTree = "<group>"; };
+		1DEDACD81B784CAE002FA6EF /* BaseRequestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestService.h; sourceTree = "<group>"; };
+		1DEDACD91B784CAE002FA6EF /* BaseRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequestService.m; sourceTree = "<group>"; };
+		1DEDACDB1B787CC1002FA6EF /* BaseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataSource.h; sourceTree = "<group>"; };
+		1DEDACDC1B787CC1002FA6EF /* BaseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataSource.m; sourceTree = "<group>"; };
+		1DEDACDE1B788328002FA6EF /* XJTestDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJTestDataSource.h; sourceTree = "<group>"; };
+		1DEDACDF1B788328002FA6EF /* XJTestDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJTestDataSource.m; sourceTree = "<group>"; };
+		1DEDACE11B78873E002FA6EF /* XJTextRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJTextRequestViewController.h; sourceTree = "<group>"; };
+		1DEDACE21B78873E002FA6EF /* XJTextRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJTextRequestViewController.m; sourceTree = "<group>"; };
+		1DEDACE31B78873E002FA6EF /* XJTextRequestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJTextRequestViewController.xib; sourceTree = "<group>"; };
+		1DEDACE71B7898E5002FA6EF /* UIColor+XJHexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XJHexColor.h"; sourceTree = "<group>"; };
+		1DEDACE81B7898E5002FA6EF /* UIColor+XJHexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XJHexColor.m"; sourceTree = "<group>"; };
+		1DEDACEA1B789A01002FA6EF /* NSString+XJString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XJString.h"; sourceTree = "<group>"; };
+		1DEDACEB1B789A01002FA6EF /* NSString+XJString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XJString.m"; sourceTree = "<group>"; };
 		1DF231421B69BB85004AAAE7 /* XJDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJDataSource.h; sourceTree = "<group>"; };
 		1DF231431B69BB85004AAAE7 /* XJDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJDataSource.m; sourceTree = "<group>"; };
 		1DF231521B69C077004AAAE7 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
@@ -162,6 +187,9 @@
 		1D7E8A3B1B678A73005491F0 /* XJStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1DEDACE61B7898A3002FA6EF /* Categorys */,
+				1DEDACD71B7841B4002FA6EF /* XJHttpRequest */,
+				1DEDACD11B783BC9002FA6EF /* XJAlertView */,
 				1DFD9FAE1B744AFE00341099 /* PickerView */,
 				1DFD9F951B71F26700341099 /* SearchBarAndController */,
 				1DFD9F8D1B70C18700341099 /* UITableViewDemo */,
@@ -238,6 +266,43 @@
 				1DC750781B68DDBC00366AA9 /* XJCoreData.xcdatamodeld */,
 			);
 			path = XJCoreData;
+			sourceTree = "<group>";
+		};
+		1DEDACD11B783BC9002FA6EF /* XJAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				1DEDACD21B783BE7002FA6EF /* XJAlertViewViewController.h */,
+				1DEDACD31B783BE7002FA6EF /* XJAlertViewViewController.m */,
+				1DEDACD41B783BE7002FA6EF /* XJAlertViewViewController.xib */,
+			);
+			path = XJAlertView;
+			sourceTree = "<group>";
+		};
+		1DEDACD71B7841B4002FA6EF /* XJHttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				1DEDACD81B784CAE002FA6EF /* BaseRequestService.h */,
+				1DEDACD91B784CAE002FA6EF /* BaseRequestService.m */,
+				1DEDACDB1B787CC1002FA6EF /* BaseDataSource.h */,
+				1DEDACDC1B787CC1002FA6EF /* BaseDataSource.m */,
+				1DEDACDE1B788328002FA6EF /* XJTestDataSource.h */,
+				1DEDACDF1B788328002FA6EF /* XJTestDataSource.m */,
+				1DEDACE11B78873E002FA6EF /* XJTextRequestViewController.h */,
+				1DEDACE21B78873E002FA6EF /* XJTextRequestViewController.m */,
+				1DEDACE31B78873E002FA6EF /* XJTextRequestViewController.xib */,
+			);
+			path = XJHttpRequest;
+			sourceTree = "<group>";
+		};
+		1DEDACE61B7898A3002FA6EF /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				1DEDACE71B7898E5002FA6EF /* UIColor+XJHexColor.h */,
+				1DEDACE81B7898E5002FA6EF /* UIColor+XJHexColor.m */,
+				1DEDACEA1B789A01002FA6EF /* NSString+XJString.h */,
+				1DEDACEB1B789A01002FA6EF /* NSString+XJString.m */,
+			);
+			path = Categorys;
 			sourceTree = "<group>";
 		};
 		1DF231451B69BDD8004AAAE7 /* Models */ = {
@@ -437,7 +502,9 @@
 				1DFD9FA01B72260200341099 /* search_icon@2x.png in Resources */,
 				1DC750821B68DF0900366AA9 /* XJAddDataViewController.xib in Resources */,
 				1DFD9FA21B72260700341099 /* search_icon@3x.png in Resources */,
+				1DEDACD61B783BE7002FA6EF /* XJAlertViewViewController.xib in Resources */,
 				1DF2315F1B69D74C004AAAE7 /* XJDataDetailViewController.xib in Resources */,
+				1DEDACE51B78873E002FA6EF /* XJTextRequestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DFD9FBD1B7487C700341099 /* XJSinglePickerView.m in Sources */,
+				1DEDACE91B7898E5002FA6EF /* UIColor+XJHexColor.m in Sources */,
 				1DFD9FC41B7492E700341099 /* XJSearchDisplayViewController.m in Sources */,
 				1DC750811B68DF0900366AA9 /* XJAddDataViewController.m in Sources */,
 				1DC7506F1B68A8C200366AA9 /* XJDataListViewController.m in Sources */,
@@ -496,15 +564,21 @@
 				1D7E8A421B678A73005491F0 /* AppDelegate.m in Sources */,
 				1DC7507A1B68DDBC00366AA9 /* XJCoreData.xcdatamodeld in Sources */,
 				1DFD9F9E1B71F31100341099 /* XJSearchBar.m in Sources */,
+				1DEDACE01B788328002FA6EF /* XJTestDataSource.m in Sources */,
 				1DFD9FB51B744F9200341099 /* XJPickerViewController.m in Sources */,
 				1D7E8A3F1B678A73005491F0 /* main.m in Sources */,
 				1DF231571B69C078004AAAE7 /* UserDetailInfo.m in Sources */,
+				1DEDACEC1B789A01002FA6EF /* NSString+XJString.m in Sources */,
 				1DFD9F871B70671B00341099 /* XJActionSheetViewController.m in Sources */,
+				1DEDACDA1B784CAE002FA6EF /* BaseRequestService.m in Sources */,
 				1DC7507D1B68DEE100366AA9 /* XJBaseViewController.m in Sources */,
+				1DEDACE41B78873E002FA6EF /* XJTextRequestViewController.m in Sources */,
 				1DFD9F991B71F2CB00341099 /* XJSearchBarViewController.m in Sources */,
 				1DFD9FC91B7493B600341099 /* XJSearchViewController.m in Sources */,
+				1DEDACD51B783BE7002FA6EF /* XJAlertViewViewController.m in Sources */,
 				1D7E8A641B678BAB005491F0 /* XJRootViewController.m in Sources */,
 				1DC750771B68DC8B00366AA9 /* XJCoreData.m in Sources */,
+				1DEDACDD1B787CC1002FA6EF /* BaseDataSource.m in Sources */,
 				1DF231541B69C077004AAAE7 /* UserInfo.m in Sources */,
 				1DF2315A1B69CB78004AAAE7 /* XJBaseModel.m in Sources */,
 				1DF231441B69BB85004AAAE7 /* XJDataSource.m in Sources */,
@@ -640,9 +714,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = XJStudyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -653,8 +729,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = XJStudyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

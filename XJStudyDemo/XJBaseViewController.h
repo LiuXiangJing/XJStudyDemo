@@ -10,6 +10,7 @@
 #define kScreenWidth CGRectGetWidth([[UIScreen mainScreen] bounds])
 #define kScreenHeight CGRectGetHeight([[UIScreen mainScreen] bounds])
 #import "DebugTools.h"
+#import "MBProgressHUD.h"
 @interface XJBaseViewController : UIViewController
 
 @end

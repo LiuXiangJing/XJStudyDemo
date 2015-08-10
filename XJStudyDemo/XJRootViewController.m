@@ -20,6 +20,8 @@
 #import "XJPickerViewController.h"
 #import "XJSearchDisplayViewController.h"
 #import "XJSearchViewController.h"
+#import "XJAlertViewViewController.h"
+#import "XJTextRequestViewController.h"
 static NSString * cellIdentifier =@"XJTableViewCell";
 @implementation XJRootViewController
 
@@ -30,9 +32,10 @@ static NSString * cellIdentifier =@"XJTableViewCell";
     _dataSourceArray =@[
                     @[@"UILabel",@"UITextField",@"UIActionSheet",@"UITextView",@"UIScrollerView",@"UITableView",@"UICollectionView",@"UISearchBar",@"UISearchDisplayController(iOS8弃用)",@"UISearchController(iOS8新增)",@"UIPickerView"],
                         @[@"CoreData"],
-                        @[@"XJActionSheet",@"XJSearchBar",@"XJSinglePickerView"]
+                        @[@"XJActionSheet",@"XJSearchBar",@"XJSinglePickerView",@"XJAlertView"],
+                        @[@"XJHTTPRequest"]
                    ];
-    _sectionTitlesArray =@[@"系统控件",@"系统数据",@"自我封装"];
+    _sectionTitlesArray =@[@"系统控件",@"系统数据",@"自我封装",@"网络请求"];
     self.tableView.tableFooterView =[UIView new];
  
 }
@@ -155,10 +158,30 @@ static NSString * cellIdentifier =@"XJTableViewCell";
                 case 1:{//XJSearchBar
                     XJSearchBarViewController * searchBarVC =[[XJSearchBarViewController alloc]init];
                     [self.navigationController pushViewController:searchBarVC animated:YES];
+                    break;
                 }
                 case 2:{//XJSinglePickerView
                     XJPickerViewController * pickerVC =[[XJPickerViewController alloc]init];
                     [self.navigationController pushViewController:pickerVC animated:YES];
+                    break;
+                }
+                case 3:{//XJAlertView;
+                    XJAlertViewViewController * alertVC =[[XJAlertViewViewController alloc]init];
+                    [self.navigationController pushViewController:alertVC animated:YES];
+                    break;
+                }
+                default:
+                    break;
+            }
+            break;
+        }
+        case 3:{
+            switch (indexPath.row) {
+                case 0://XJHTTPRequest
+                {
+                    XJTextRequestViewController * requestVC =[[XJTextRequestViewController alloc]init];
+                    [self.navigationController pushViewController:requestVC animated:YES];
+                    break;
                 }
                 default:
                     break;
