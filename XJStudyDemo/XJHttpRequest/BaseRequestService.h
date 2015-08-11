@@ -19,7 +19,7 @@ extern NSString * const BaseRequestPath;
 
 extern NSString * const BaseRequestParameter;
 
-extern NSString * const BaseRequestLoading;//是否显示加载中
+//extern NSString * const BaseRequestLoading;//是否显示加载中
 
 //如果不传，返回的结果 会是未解析的字典
 extern NSString * const BaseRequestModelMapping;//如果需要解析  传入需要被解析的model类型对应的string
@@ -38,4 +38,5 @@ typedef void(^RequestHandle)(BOOL success,NSString * errorMsg,NSArray * results)
 - (id)sendRequest:(NSDictionary *)requestInfo complicate:(RequestHandle)complicate;
 
 - (id)upload:(NSDictionary*)requestInfo appenddata:(void (^)(id <AFMultipartFormData> formData))block complicate:(RequestHandle)complicate;
+
 @end

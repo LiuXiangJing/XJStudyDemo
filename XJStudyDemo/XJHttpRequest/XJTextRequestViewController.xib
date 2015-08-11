@@ -24,9 +24,20 @@
                         <action selector="sendARequestAction:" destination="-1" eventType="touchUpInside" id="YSZ-sB-ELb"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKF-9T-V8T">
+                    <rect key="frame" x="267" y="186" width="66" height="30"/>
+                    <state key="normal" title="showTips">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showTipsAction:" destination="-1" eventType="touchUpInside" id="KfU-Gk-CHW"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="vKF-9T-V8T" firstAttribute="top" secondItem="OkE-W2-UgK" secondAttribute="bottom" constant="50" id="514-ez-KsU"/>
+                <constraint firstAttribute="centerX" secondItem="vKF-9T-V8T" secondAttribute="centerX" id="cc4-z0-lok"/>
                 <constraint firstAttribute="centerX" secondItem="OkE-W2-UgK" secondAttribute="centerX" id="dE9-7X-UT6"/>
                 <constraint firstItem="OkE-W2-UgK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="106" id="eaR-de-Wi9"/>
             </constraints>

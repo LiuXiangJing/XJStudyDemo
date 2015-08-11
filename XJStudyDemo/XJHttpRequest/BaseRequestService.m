@@ -34,9 +34,8 @@ NSString * const BaseRequestLoading             = @"XJ_BASE_CLIENT_REQUEST_Loadi
 
 @property (nonatomic,strong) AFHTTPSessionManager * sessionManager NS_AVAILABLE_IOS(7_0);
 @end
-
 @implementation BaseRequestService
-#pragma mark - 设置私有想法
+#pragma mark - 私有方法
 - (instancetype)initWithBaseURL:(NSURL *)baseURL{
     self =[super init];
     if (self) {
@@ -87,7 +86,7 @@ NSString * const BaseRequestLoading             = @"XJ_BASE_CLIENT_REQUEST_Loadi
     AFHTTPRequestOperation *operation = [self.manager
                                          HTTPRequestOperationWithRequest:request
                                          success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                             complicate(YES,@"",@[operation,responseObject]);
+                                             complicate(YES,@"",@[responseObject]);
                                          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                                              complicate(NO,error.domain,@[error]);
                                          }];
@@ -155,7 +154,7 @@ NSString * const BaseRequestLoading             = @"XJ_BASE_CLIENT_REQUEST_Loadi
 -(id)sendRequestInfo:(NSDictionary *)requestinfo constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))block complicate:(RequestHandle)complicate  NS_AVAILABLE_IOS(7_0){
     
     return  [self requesturl:requestinfo[BaseRequestPath] method:requestinfo[BaseRequestMethod] parameters:requestinfo[BaseRequestParameter] constructingBodyWithBlock:block success:^(NSURLSessionDataTask *task, id responseObject) {
-        complicate(YES,@"",@[task,responseObject]);
+        complicate(YES,@"",@[responseObject]);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         complicate(NO,error.domain,@[error]);
     }];
@@ -187,11 +186,24 @@ NSString * const BaseRequestLoading             = @"XJ_BASE_CLIENT_REQUEST_Loadi
 #pragma mark - 处理请求的结果不分系统版本
 - (RequestHandle)handleRequestResult:(NSDictionary *)requestInfo complicate:(RequestHandle)complicate{
     return ^(BOOL success,NSString * errorMsg,NSArray * results){
-        NSLog(@"results==%@",results);
         if (success) {
-            
+            NSDictionary * dataDic =[results lastObject];
+            NSString * code =[NSString stringWithFormat:@"%@",[dataDic valueForKey:@"code"]];
+            if (![code isEqualToString:@"0"]) {
+                success = NO;
+                errorMsg =[NSString stringWithFormat:@"%@",[dataDic valueForKey:@"msg"]];
+                results =@[];
+            }
+        }else{
+            results =@[];
         }
         complicate(success,errorMsg,results);
     };
+}
+- (void)mapeModelWithData:(id)data toModel:(Class)class forKey:(NSString *)key complicate:(void (^)(NSArray * resultArray))complete{
+    
+    
+    
+    
 }
 @end

@@ -21,6 +21,14 @@
 		1DC7507D1B68DEE100366AA9 /* XJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7507C1B68DEE100366AA9 /* XJBaseViewController.m */; };
 		1DC750811B68DF0900366AA9 /* XJAddDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7507F1B68DF0900366AA9 /* XJAddDataViewController.m */; };
 		1DC750821B68DF0900366AA9 /* XJAddDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC750801B68DF0900366AA9 /* XJAddDataViewController.xib */; };
+		1DDD1CB61B798DFF006487B4 /* KZWProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD1CB51B798DFF006487B4 /* KZWProgressHUD.m */; };
+		1DDD1CB91B79E48B006487B4 /* XJTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD1CB81B79E48B006487B4 /* XJTestModel.m */; };
+		1DDD1CBC1B79ECD8006487B4 /* XJStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD1CBB1B79ECD8006487B4 /* XJStatus.m */; };
+		1DDD1CBF1B79ECED006487B4 /* XJUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD1CBE1B79ECED006487B4 /* XJUser.m */; };
+		1DDD1CC31B7A03A4006487B4 /* XJBaseJsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD1CC21B7A03A4006487B4 /* XJBaseJsonModel.m */; };
+		1DDD1CCA1B7A0557006487B4 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD1CC51B7A0557006487B4 /* Status.m */; };
+		1DDD1CCB1B7A0557006487B4 /* StatusResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD1CC71B7A0557006487B4 /* StatusResult.m */; };
+		1DDD1CCC1B7A0557006487B4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD1CC91B7A0557006487B4 /* User.m */; };
 		1DEDACD51B783BE7002FA6EF /* XJAlertViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDACD31B783BE7002FA6EF /* XJAlertViewViewController.m */; };
 		1DEDACD61B783BE7002FA6EF /* XJAlertViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DEDACD41B783BE7002FA6EF /* XJAlertViewViewController.xib */; };
 		1DEDACDA1B784CAE002FA6EF /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDACD91B784CAE002FA6EF /* BaseRequestService.m */; };
@@ -89,6 +97,22 @@
 		1DC7507E1B68DF0900366AA9 /* XJAddDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJAddDataViewController.h; sourceTree = "<group>"; };
 		1DC7507F1B68DF0900366AA9 /* XJAddDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJAddDataViewController.m; sourceTree = "<group>"; };
 		1DC750801B68DF0900366AA9 /* XJAddDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJAddDataViewController.xib; sourceTree = "<group>"; };
+		1DDD1CB41B798DFF006487B4 /* KZWProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZWProgressHUD.h; sourceTree = "<group>"; };
+		1DDD1CB51B798DFF006487B4 /* KZWProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZWProgressHUD.m; sourceTree = "<group>"; };
+		1DDD1CB71B79E48B006487B4 /* XJTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJTestModel.h; sourceTree = "<group>"; };
+		1DDD1CB81B79E48B006487B4 /* XJTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJTestModel.m; sourceTree = "<group>"; };
+		1DDD1CBA1B79ECD8006487B4 /* XJStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJStatus.h; sourceTree = "<group>"; };
+		1DDD1CBB1B79ECD8006487B4 /* XJStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJStatus.m; sourceTree = "<group>"; };
+		1DDD1CBD1B79ECED006487B4 /* XJUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJUser.h; sourceTree = "<group>"; };
+		1DDD1CBE1B79ECED006487B4 /* XJUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJUser.m; sourceTree = "<group>"; };
+		1DDD1CC11B7A03A4006487B4 /* XJBaseJsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJBaseJsonModel.h; sourceTree = "<group>"; };
+		1DDD1CC21B7A03A4006487B4 /* XJBaseJsonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJBaseJsonModel.m; sourceTree = "<group>"; };
+		1DDD1CC41B7A0557006487B4 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		1DDD1CC51B7A0557006487B4 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
+		1DDD1CC61B7A0557006487B4 /* StatusResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusResult.h; sourceTree = "<group>"; };
+		1DDD1CC71B7A0557006487B4 /* StatusResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusResult.m; sourceTree = "<group>"; };
+		1DDD1CC81B7A0557006487B4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		1DDD1CC91B7A0557006487B4 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		1DEDACD21B783BE7002FA6EF /* XJAlertViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJAlertViewViewController.h; sourceTree = "<group>"; };
 		1DEDACD31B783BE7002FA6EF /* XJAlertViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJAlertViewViewController.m; sourceTree = "<group>"; };
 		1DEDACD41B783BE7002FA6EF /* XJAlertViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJAlertViewViewController.xib; sourceTree = "<group>"; };
@@ -187,6 +211,7 @@
 		1D7E8A3B1B678A73005491F0 /* XJStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1DDD1CC01B7A021E006487B4 /* ModelJsonTransform */,
 				1DEDACE61B7898A3002FA6EF /* Categorys */,
 				1DEDACD71B7841B4002FA6EF /* XJHttpRequest */,
 				1DEDACD11B783BC9002FA6EF /* XJAlertView */,
@@ -202,6 +227,8 @@
 				1DC7507C1B68DEE100366AA9 /* XJBaseViewController.m */,
 				1D7E8A621B678BAB005491F0 /* XJRootViewController.h */,
 				1D7E8A631B678BAB005491F0 /* XJRootViewController.m */,
+				1DDD1CB41B798DFF006487B4 /* KZWProgressHUD.h */,
+				1DDD1CB51B798DFF006487B4 /* KZWProgressHUD.m */,
 				1D7E8A461B678A73005491F0 /* Main.storyboard */,
 				1D7E8A491B678A73005491F0 /* Images.xcassets */,
 				1D7E8A4B1B678A73005491F0 /* LaunchScreen.xib */,
@@ -268,6 +295,21 @@
 			path = XJCoreData;
 			sourceTree = "<group>";
 		};
+		1DDD1CC01B7A021E006487B4 /* ModelJsonTransform */ = {
+			isa = PBXGroup;
+			children = (
+				1DDD1CC11B7A03A4006487B4 /* XJBaseJsonModel.h */,
+				1DDD1CC21B7A03A4006487B4 /* XJBaseJsonModel.m */,
+				1DDD1CC41B7A0557006487B4 /* Status.h */,
+				1DDD1CC51B7A0557006487B4 /* Status.m */,
+				1DDD1CC61B7A0557006487B4 /* StatusResult.h */,
+				1DDD1CC71B7A0557006487B4 /* StatusResult.m */,
+				1DDD1CC81B7A0557006487B4 /* User.h */,
+				1DDD1CC91B7A0557006487B4 /* User.m */,
+			);
+			path = ModelJsonTransform;
+			sourceTree = "<group>";
+		};
 		1DEDACD11B783BC9002FA6EF /* XJAlertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +329,12 @@
 				1DEDACDC1B787CC1002FA6EF /* BaseDataSource.m */,
 				1DEDACDE1B788328002FA6EF /* XJTestDataSource.h */,
 				1DEDACDF1B788328002FA6EF /* XJTestDataSource.m */,
+				1DDD1CB71B79E48B006487B4 /* XJTestModel.h */,
+				1DDD1CB81B79E48B006487B4 /* XJTestModel.m */,
+				1DDD1CBA1B79ECD8006487B4 /* XJStatus.h */,
+				1DDD1CBB1B79ECD8006487B4 /* XJStatus.m */,
+				1DDD1CBD1B79ECED006487B4 /* XJUser.h */,
+				1DDD1CBE1B79ECED006487B4 /* XJUser.m */,
 				1DEDACE11B78873E002FA6EF /* XJTextRequestViewController.h */,
 				1DEDACE21B78873E002FA6EF /* XJTextRequestViewController.m */,
 				1DEDACE31B78873E002FA6EF /* XJTextRequestViewController.xib */,
@@ -555,6 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DDD1CCC1B7A0557006487B4 /* User.m in Sources */,
 				1DFD9FBD1B7487C700341099 /* XJSinglePickerView.m in Sources */,
 				1DEDACE91B7898E5002FA6EF /* UIColor+XJHexColor.m in Sources */,
 				1DFD9FC41B7492E700341099 /* XJSearchDisplayViewController.m in Sources */,
@@ -566,9 +615,14 @@
 				1DFD9F9E1B71F31100341099 /* XJSearchBar.m in Sources */,
 				1DEDACE01B788328002FA6EF /* XJTestDataSource.m in Sources */,
 				1DFD9FB51B744F9200341099 /* XJPickerViewController.m in Sources */,
+				1DDD1CBC1B79ECD8006487B4 /* XJStatus.m in Sources */,
+				1DDD1CB61B798DFF006487B4 /* KZWProgressHUD.m in Sources */,
+				1DDD1CCA1B7A0557006487B4 /* Status.m in Sources */,
 				1D7E8A3F1B678A73005491F0 /* main.m in Sources */,
 				1DF231571B69C078004AAAE7 /* UserDetailInfo.m in Sources */,
+				1DDD1CCB1B7A0557006487B4 /* StatusResult.m in Sources */,
 				1DEDACEC1B789A01002FA6EF /* NSString+XJString.m in Sources */,
+				1DDD1CB91B79E48B006487B4 /* XJTestModel.m in Sources */,
 				1DFD9F871B70671B00341099 /* XJActionSheetViewController.m in Sources */,
 				1DEDACDA1B784CAE002FA6EF /* BaseRequestService.m in Sources */,
 				1DC7507D1B68DEE100366AA9 /* XJBaseViewController.m in Sources */,
@@ -582,7 +636,9 @@
 				1DF231541B69C077004AAAE7 /* UserInfo.m in Sources */,
 				1DF2315A1B69CB78004AAAE7 /* XJBaseModel.m in Sources */,
 				1DF231441B69BB85004AAAE7 /* XJDataSource.m in Sources */,
+				1DDD1CC31B7A03A4006487B4 /* XJBaseJsonModel.m in Sources */,
 				1DFD9F501B7053CC00341099 /* XJActionSheet.m in Sources */,
+				1DDD1CBF1B79ECED006487B4 /* XJUser.m in Sources */,
 				1DFD9F8C1B706AE500341099 /* DebugTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
