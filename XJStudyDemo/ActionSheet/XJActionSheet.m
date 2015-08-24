@@ -40,6 +40,8 @@
 @property(nonatomic,strong)UILabel *titleLabel;
 
 @property(nonatomic,strong)UIView * bgView;//白色部分
+@property(nonatomic,copy)NSString * title;//title
+
 @end
 
 #define spacing 10
@@ -87,15 +89,21 @@ static NSString * cellIdentifier =@"UITableViewCell";
         }
         otherBtnFont =[UIFont systemFontOfSize:15];
         otherBtnColor =[UIColor colorWithRed:0.0/255 green:165.0/255 blue:240.0/255 alpha:1];
-
+        self.title = title;
         [self calculateBgViewHeightAndOry];
-        [[self titleLabel] setText:title];
-        [[self otherTableView]setTableHeaderView:[self titleLabel]];
+        
+        if (title) {
+            [[self titleLabel] setText:title];
+            [[self otherTableView]setTableHeaderView:[self titleLabel]];
+        }
+        [self otherTableView];
+        
         if (cancelButtonTitle) {
             [[self cancelButton] setTitle:cancelButtonTitle forState:UIControlStateNormal];
         }
         self.frame = CGRectMake(0,0, kScreenWidth, kScreenHeight);
-        self.backgroundColor =[UIColor colorWithWhite:0 alpha:0.2f];
+        self.backgroundColor =[UIColor colorWithWhite:0 alpha:0.4f];
+
     }
     return self;
 }
@@ -269,7 +277,10 @@ static NSString * cellIdentifier =@"UITableViewCell";
 }
 #pragma mark - calculate 计算 tableView的高度 和bgView的高度
 -(void)calculateBgViewHeightAndOry{
-    tableViewHeigt = [_titleArray count] *heightOfRow + heightOfRow;
+    tableViewHeigt = [_titleArray count] *heightOfRow;
+    if (self.title) {
+        tableViewHeigt += heightOfRow;
+    }
     if (tableViewHeigt > maxTableViewHeght ) {
         tableViewHeigt = maxTableViewHeght;
     }

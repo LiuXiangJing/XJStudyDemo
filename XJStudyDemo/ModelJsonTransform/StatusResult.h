@@ -18,16 +18,16 @@
 /**
  *  总数
  */
-@property (assign, nonatomic) NSNumber *totalNumber;
+@property (copy, nonatomic) NSString *totalNumber;
 
 /**
  *  上一页的游标
  */
-@property (assign, nonatomic) long long previousCursor;
+@property (copy, nonatomic) NSString * previousCursor;
 
 /**
  *  下一页的游标
  */
-@property (assign, nonatomic) long long nextCursor;
+@property (copy, nonatomic)NSString * nextCursor;
 @property (strong,nonatomic)Status * status;
 @end

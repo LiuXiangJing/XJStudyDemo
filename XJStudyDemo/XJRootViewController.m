@@ -22,6 +22,8 @@
 #import "XJSearchViewController.h"
 #import "XJAlertViewViewController.h"
 #import "XJTextRequestViewController.h"
+#import "XJTextViewController.h"
+//#import "MyTest.framework/Headers/FirstUtils.h"
 static NSString * cellIdentifier =@"XJTableViewCell";
 @implementation XJRootViewController
 
@@ -38,6 +40,7 @@ static NSString * cellIdentifier =@"XJTableViewCell";
     _sectionTitlesArray =@[@"系统控件",@"系统数据",@"自我封装",@"网络请求"];
     self.tableView.tableFooterView =[UIView new];
  
+  
 }
 
 - (void)didReceiveMemoryWarning {
@@ -96,6 +99,8 @@ static NSString * cellIdentifier =@"XJTableViewCell";
                 }
                 case 3:
                 {//UITextView
+                    XJTextViewController * textViewController =[[XJTextViewController alloc]init];
+                    [self.navigationController pushViewController:textViewController animated:YES];
                     break;
                 }
                 case 4://UIScrollerView

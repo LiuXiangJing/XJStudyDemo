@@ -27,4 +27,7 @@
     }
     return self;
 }
+-(void)dealloc{
+    [_netWorkService cancelAllRequest];
+}
 @end

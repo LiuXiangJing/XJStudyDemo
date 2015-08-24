@@ -10,4 +10,5 @@
 @implementation StatusResult
 ModelTransformer(statuses, [MTLJSONAdapter arrayTransformerWithModelClass:[Status class]]);
 ModelTransformer(status, [MTLJSONAdapter dictionaryTransformerWithModelClass:[Status class]]);
+
 @end

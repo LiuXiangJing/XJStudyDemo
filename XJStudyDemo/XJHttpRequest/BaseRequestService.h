@@ -38,5 +38,5 @@ typedef void(^RequestHandle)(BOOL success,NSString * errorMsg,NSArray * results)
 - (id)sendRequest:(NSDictionary *)requestInfo complicate:(RequestHandle)complicate;
 
 - (id)upload:(NSDictionary*)requestInfo appenddata:(void (^)(id <AFMultipartFormData> formData))block complicate:(RequestHandle)complicate;
-
+- (void)cancelAllRequest;
 @end

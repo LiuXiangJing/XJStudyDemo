@@ -15,9 +15,9 @@
 @end
 #import "KZWProgressHUD.h"
 #import "MJExtension.h"
-#import "XJTestModel.h"
 #import <Mantle.h>
 #import "StatusResult.h"
+#import "User.h"
 @implementation XJTextRequestViewController
 
 - (void)viewDidLoad {
@@ -33,7 +33,7 @@
     }];
 }
 - (IBAction)showTipsAction:(id)sender {
-    
+//    [self reans];
     // 1.定义一个字典
     NSDictionary *dict = @{
                            @"statuses" : @[
@@ -89,7 +89,8 @@
                                        }
                                }
                            };
-    [self mapData:dict toClass:[StatusResult class] forKey:nil];
+    
+    [self mapData:dict toClass:[Status class] forKey:@"status"];
     
     /*
     [XJTestModel setupObjectClassInArray:^NSDictionary *{
@@ -126,6 +127,9 @@
                                @"icon" : @"zero.png",
                                }
                            ];
+    
+    [self mapData:dictArray toClass:[User class] forKey:nil];
+
 }
 -(void)mapData:(id)respondData toClass:(Class)class forKey:(NSString *)key {
     if (respondData) {
@@ -154,7 +158,6 @@
         }else if ([respondData isKindOfClass:[NSArray class]]){
              mappingData = [MTLJSONAdapter modelsOfClass:class fromJSONArray:respondData error:&error];
         }
-        
         NSLog(@"mappingData==%@",mappingData);
     }
 }

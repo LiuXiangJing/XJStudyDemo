@@ -22,6 +22,6 @@
 /**
  *  转发的微博
  */
-@property (strong, nonatomic) Status *retweetedStatus;
+//@property (strong, nonatomic) Status *reStatus;
 
 @end

@@ -10,6 +10,5 @@
 #import "User.h"
 @implementation Status
 ModelTransformer(user, [MTLJSONAdapter dictionaryTransformerWithModelClass:[User class]])
-ModelTransformer(status, [MTLJSONAdapter dictionaryTransformerWithModelClass:[Status class]])
 
 @end

@@ -34,6 +34,7 @@ NSString * const BaseRequestLoading             = @"XJ_BASE_CLIENT_REQUEST_Loadi
 
 @property (nonatomic,strong) AFHTTPSessionManager * sessionManager NS_AVAILABLE_IOS(7_0);
 @end
+#import <Mantle.h>
 @implementation BaseRequestService
 #pragma mark - 私有方法
 - (instancetype)initWithBaseURL:(NSURL *)baseURL{
@@ -92,7 +93,6 @@ NSString * const BaseRequestLoading             = @"XJ_BASE_CLIENT_REQUEST_Loadi
                                          }];
     [self.manager.operationQueue addOperation:operation];
     return operation;
-    return nil;
 }
 
 - (NSURLRequest *)URLRequestWithRequestInfo:(NSDictionary *)requestInfo{
@@ -183,7 +183,7 @@ NSString * const BaseRequestLoading             = @"XJ_BASE_CLIENT_REQUEST_Loadi
     }
 }
 
-#pragma mark - 处理请求的结果不分系统版本
+#pragma mark - 处理请求的结果不分系统版本..不同应用做不同的处理。。。。
 - (RequestHandle)handleRequestResult:(NSDictionary *)requestInfo complicate:(RequestHandle)complicate{
     return ^(BOOL success,NSString * errorMsg,NSArray * results){
         if (success) {
@@ -193,6 +193,14 @@ NSString * const BaseRequestLoading             = @"XJ_BASE_CLIENT_REQUEST_Loadi
                 success = NO;
                 errorMsg =[NSString stringWithFormat:@"%@",[dataDic valueForKey:@"msg"]];
                 results =@[];
+            }else{
+                Class modelClass = requestInfo[BaseRequestModelMapping];
+                if (modelClass) {//是否映射
+                    [self mapeModelWithData:dataDic toModel:modelClass forKey:requestInfo[BaseRequestModleAnalysisKey] complicate:complicate];
+                }else{
+                    complicate(success,@"",@[dataDic]);
+                }
+                
             }
         }else{
             results =@[];
@@ -200,10 +208,46 @@ NSString * const BaseRequestLoading             = @"XJ_BASE_CLIENT_REQUEST_Loadi
         complicate(success,errorMsg,results);
     };
 }
-- (void)mapeModelWithData:(id)data toModel:(Class)class forKey:(NSString *)key complicate:(void (^)(NSArray * resultArray))complete{
+- (void)mapeModelWithData:(id)respondData toModel:(Class)class forKey:(NSString *)key complicate:(RequestHandle)complete{
+    
+    if (respondData) {
+        id mappingData;
+        __block NSError *error;
+        if ([respondData isKindOfClass:[NSDictionary class]]) {
+            if (key) {
+                
+                id keyData = respondData[key];
+                
+                if ([keyData isKindOfClass:[NSArray class]]) {
+                    mappingData = [MTLJSONAdapter modelsOfClass:class fromJSONArray:keyData error:&error];
+                    
+                }else {
+                    mappingData = [MTLJSONAdapter modelOfClass:class
+                                            fromJSONDictionary:keyData
+                                                         error:&error];
+                }
+            }else{
+                
+                mappingData = [MTLJSONAdapter modelOfClass:class
+                                        fromJSONDictionary:respondData
+                                                     error:&error];
+            }
+            
+        }else if ([respondData isKindOfClass:[NSArray class]]){
+            mappingData = [MTLJSONAdapter modelsOfClass:class fromJSONArray:respondData error:&error];
+        }
+        if (error) {
+            complete(YES,error.domain, nil);
+        }else {
+            complete(YES,@"",@[mappingData]);
+        }
+    }
+     complete(YES,@"", nil);
     
     
-    
-    
+}
+- (void)cancelAllRequest{
+    [self.manager.operationQueue cancelAllOperations];
+    [self.sessionManager.operationQueue cancelAllOperations];
 }
 @end
