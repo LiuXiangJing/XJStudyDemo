@@ -26,6 +26,7 @@ extern NSString * const BaseRequestModelMapping;//如果需要解析  传入需�
 
 extern NSString * const BaseRequestModleAnalysisKey;//如果解析字段 result里面还有一层字典或者数组，传入该modle对应的字段key
 
+extern NSString * const BaseRequestCacheRquestKey;//缓存数据。如果为空则不缓存
 
 typedef void(^RequestHandle)(BOOL success,NSString * errorMsg,NSArray * results);
 
@@ -35,8 +36,8 @@ typedef void(^RequestHandle)(BOOL success,NSString * errorMsg,NSArray * results)
 
 - (void)setRequestSerializer:(AFHTTPRequestSerializer <AFURLRequestSerialization> *)requestSerializer;
 
-- (id)sendRequest:(NSDictionary *)requestInfo complicate:(RequestHandle)complicate;
+- (id)sendRequest:(NSDictionary *)requestInfo complete:(RequestHandle)complete;
 
-- (id)upload:(NSDictionary*)requestInfo appenddata:(void (^)(id <AFMultipartFormData> formData))block complicate:(RequestHandle)complicate;
+- (id)upload:(NSDictionary*)requestInfo appenddata:(void (^)(id <AFMultipartFormData> formData))block complete:(RequestHandle)complete;
 - (void)cancelAllRequest;
 @end

@@ -10,4 +10,5 @@
 
 @interface XJTestDataSource : BaseDataSource
 - (void)testRequest:(RequestHandle)complete;
+- (void)testCacheRequest:(RequestHandle)complete;
 @end

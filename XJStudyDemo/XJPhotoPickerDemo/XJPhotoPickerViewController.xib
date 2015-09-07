@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XJPhotoPickerViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KF8-Bp-ghE">
+                    <rect key="frame" x="50" y="97" width="60" height="30"/>
+                    <state key="normal" title="选择相册">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectFromLibrary:" destination="-1" eventType="touchUpInside" id="ree-ih-zhC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRG-T0-GbW">
+                    <rect key="frame" x="208" y="97" width="30" height="30"/>
+                    <state key="normal" title="通用">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showSelecrActionSheet:" destination="-1" eventType="touchUpInside" id="fYS-1n-FAH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gRG-T0-GbW" firstAttribute="leading" secondItem="KF8-Bp-ghE" secondAttribute="trailing" constant="98" id="CTD-dh-G5l"/>
+                <constraint firstItem="KF8-Bp-ghE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="97" id="UR6-GI-CZy"/>
+                <constraint firstItem="gRG-T0-GbW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="97" id="eCm-Si-FbY"/>
+                <constraint firstItem="KF8-Bp-ghE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="wMd-fr-gAp"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

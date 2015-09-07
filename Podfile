@@ -6,6 +6,7 @@ target 'XJStudyDemo' do
   pod 'MJExtension'
   pod 'MBProgressHUD', '~> 0.9.1'
   pod 'Mantle', '~> 2.0'
+  pod 'FMDB'
 end
 
 

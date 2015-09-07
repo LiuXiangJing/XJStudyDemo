@@ -20,6 +20,11 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
   - Mantle (2.0.3):
     - Mantle/extobjc (= 2.0.3)
   - Mantle/extobjc (2.0.3)
@@ -28,12 +33,14 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
+  - FMDB
   - Mantle (~> 2.0)
   - MBProgressHUD (~> 0.9.1)
   - MJExtension
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   Mantle: 8d6b14979a082a9ed4994463eb7a4ff576c94632
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: 5ea3e326162ccc07c60afe8cc36c936bba20d0d5

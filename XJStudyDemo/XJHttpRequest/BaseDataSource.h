@@ -11,6 +11,6 @@
 @interface BaseDataSource : NSObject
 @property(nonatomic,strong,readonly)BaseRequestService * netWorkService;
 
-+(instancetype)dataSource;
++ (instancetype)dataSource;
 
 @end

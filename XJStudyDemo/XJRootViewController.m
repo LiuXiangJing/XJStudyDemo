@@ -23,6 +23,8 @@
 #import "XJAlertViewViewController.h"
 #import "XJTextRequestViewController.h"
 #import "XJTextViewController.h"
+#import "XJPhotoPickerViewController.h"
+#import "XJTableViewController.h"
 //#import "MyTest.framework/Headers/FirstUtils.h"
 static NSString * cellIdentifier =@"XJTableViewCell";
 @implementation XJRootViewController
@@ -34,7 +36,7 @@ static NSString * cellIdentifier =@"XJTableViewCell";
     _dataSourceArray =@[
                     @[@"UILabel",@"UITextField",@"UIActionSheet",@"UITextView",@"UIScrollerView",@"UITableView",@"UICollectionView",@"UISearchBar",@"UISearchDisplayController(iOS8弃用)",@"UISearchController(iOS8新增)",@"UIPickerView"],
                         @[@"CoreData"],
-                        @[@"XJActionSheet",@"XJSearchBar",@"XJSinglePickerView",@"XJAlertView"],
+                        @[@"XJActionSheet",@"XJSearchBar",@"XJSinglePickerView",@"XJAlertView",@"XJPhotoPicker"],
                         @[@"XJHTTPRequest"]
                    ];
     _sectionTitlesArray =@[@"系统控件",@"系统数据",@"自我封装",@"网络请求"];
@@ -109,6 +111,8 @@ static NSString * cellIdentifier =@"XJTableViewCell";
                 }
                 case 5://UITableView
                 {
+                    XJTableViewController * tableViewDemoVC =[[XJTableViewController alloc]init];
+                    [self.navigationController pushViewController:tableViewDemoVC animated:YES];
                     break;
                 }
                 case 6:
@@ -174,6 +178,10 @@ static NSString * cellIdentifier =@"XJTableViewCell";
                     XJAlertViewViewController * alertVC =[[XJAlertViewViewController alloc]init];
                     [self.navigationController pushViewController:alertVC animated:YES];
                     break;
+                }
+                case 4:{//XJPhotoPicker
+                    XJPhotoPickerViewController * photoPickerVC =[[XJPhotoPickerViewController alloc]init];
+                    [self.navigationController pushViewController:photoPickerVC animated:YES];
                 }
                 default:
                     break;

@@ -15,19 +15,17 @@
 
 @implementation BaseDataSource
 @synthesize netWorkService = _netWorkService;
-+(instancetype)dataSource{
++ (instancetype)dataSource{
     id dataSource  = [[[self class] alloc] init];
     return dataSource;
 }
 
--(id)init{
+- (id)init{
     self = [super init];
     if (self) {
         _netWorkService = [[BaseRequestService alloc] initWithBaseURL:[NSURL URLWithString:BaseRequestURL]];
     }
     return self;
 }
--(void)dealloc{
-    [_netWorkService cancelAllRequest];
-}
+
 @end

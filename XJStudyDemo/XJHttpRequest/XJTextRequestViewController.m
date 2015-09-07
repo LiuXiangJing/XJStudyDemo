@@ -12,12 +12,14 @@
 {
     XJTestDataSource * _dataSource;
 }
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @end
 #import "KZWProgressHUD.h"
 #import "MJExtension.h"
 #import <Mantle.h>
 #import "StatusResult.h"
 #import "User.h"
+#import "XJTargetStore.h"
 @implementation XJTextRequestViewController
 
 - (void)viewDidLoad {
@@ -25,12 +27,18 @@
     _dataSource = [XJTestDataSource dataSource];
 }
 - (IBAction)sendARequestAction:(id)sender {
-    
-    [KZWProgressHUD showLoadingInView:self.navigationController.view showOrHidden:YES];
-    [_dataSource testRequest:^(BOOL success, NSString *errorMsg, NSArray *results) {
-        [KZWProgressHUD showLoadingInView:self.navigationController.view showOrHidden:NO];
-        [KZWProgressHUD showTipsInView:self.navigationController.view OnlyString:errorMsg];
+    self.resultLabel.text =@"";
+    __weak typeof(self)weakSelf =self;
+    [_dataSource testCacheRequest:^(BOOL success, NSString *errorMsg, NSArray *results) {
+        if (success) {
+            weakSelf.resultLabel.text = [results description];
+        }else{
+            weakSelf.resultLabel.text = errorMsg;
+        }
     }];
+}
+- (IBAction)clearAllData:(id)sender {
+    [XJTargetStore clearRequestData];
 }
 - (IBAction)showTipsAction:(id)sender {
 //    [self reans];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XJTextRequestViewController">
             <connections>
+                <outlet property="resultLabel" destination="cHO-x4-LCO" id="JSi-6F-nxe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,14 +34,34 @@
                         <action selector="showTipsAction:" destination="-1" eventType="touchUpInside" id="KfU-Gk-CHW"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHO-x4-LCO">
+                    <rect key="frame" x="281" y="261" width="38" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg9-FN-jZo">
+                    <rect key="frame" x="20" y="106" width="55" height="30"/>
+                    <state key="normal" title="clearDB">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clearAllData:" destination="-1" eventType="touchUpInside" id="2oj-MP-UzH"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="vKF-9T-V8T" firstAttribute="top" secondItem="OkE-W2-UgK" secondAttribute="bottom" constant="50" id="514-ez-KsU"/>
+                <constraint firstAttribute="centerX" secondItem="cHO-x4-LCO" secondAttribute="centerX" id="JDp-KH-bvb"/>
+                <constraint firstItem="vg9-FN-jZo" firstAttribute="centerY" secondItem="OkE-W2-UgK" secondAttribute="centerY" id="MZ5-M0-ZwA"/>
+                <constraint firstItem="vg9-FN-jZo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="OyK-MG-bVn"/>
+                <constraint firstItem="cHO-x4-LCO" firstAttribute="top" secondItem="vKF-9T-V8T" secondAttribute="bottom" constant="45" id="Xek-2B-52i"/>
                 <constraint firstAttribute="centerX" secondItem="vKF-9T-V8T" secondAttribute="centerX" id="cc4-z0-lok"/>
                 <constraint firstAttribute="centerX" secondItem="OkE-W2-UgK" secondAttribute="centerX" id="dE9-7X-UT6"/>
                 <constraint firstItem="OkE-W2-UgK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="106" id="eaR-de-Wi9"/>
             </constraints>
+            <point key="canvasLocation" x="-14" y="371"/>
         </view>
     </objects>
 </document>

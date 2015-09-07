@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1D66809A1B8B184B0001BEA9 /* XJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6680991B8B184B0001BEA9 /* XJAlertView.m */; };
+		1D7AE9571B9C48AF008D7A6C /* YTKKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7AE9561B9C48AF008D7A6C /* YTKKeyValueStore.m */; };
+		1D7AE95A1B9C48F6008D7A6C /* XJTargetStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7AE9591B9C48F6008D7A6C /* XJTargetStore.m */; };
 		1D7E8A3F1B678A73005491F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E8A3E1B678A73005491F0 /* main.m */; };
 		1D7E8A421B678A73005491F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E8A411B678A73005491F0 /* AppDelegate.m */; };
 		1D7E8A481B678A73005491F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7E8A461B678A73005491F0 /* Main.storyboard */; };
@@ -22,6 +24,28 @@
 		1DC7507D1B68DEE100366AA9 /* XJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7507C1B68DEE100366AA9 /* XJBaseViewController.m */; };
 		1DC750811B68DF0900366AA9 /* XJAddDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7507F1B68DF0900366AA9 /* XJAddDataViewController.m */; };
 		1DC750821B68DF0900366AA9 /* XJAddDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC750801B68DF0900366AA9 /* XJAddDataViewController.xib */; };
+		1DC897E61B8D683000DAC969 /* XJAssetCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC897E11B8D683000DAC969 /* XJAssetCollectionCell.m */; };
+		1DC897E71B8D683000DAC969 /* XJAssetCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC897E21B8D683000DAC969 /* XJAssetCollectionCell.xib */; };
+		1DC897E81B8D683000DAC969 /* XJAssetHorizontalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC897E41B8D683000DAC969 /* XJAssetHorizontalViewCell.m */; };
+		1DC897E91B8D683000DAC969 /* XJAssetHorizontalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC897E51B8D683000DAC969 /* XJAssetHorizontalViewCell.xib */; };
+		1DC897FA1B8D684100DAC969 /* BAAssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC897EB1B8D684100DAC969 /* BAAssetLibrary.m */; };
+		1DC897FB1B8D684100DAC969 /* XJAssetCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC897ED1B8D684100DAC969 /* XJAssetCellModel.m */; };
+		1DC897FC1B8D684100DAC969 /* XJAssetCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC897EF1B8D684100DAC969 /* XJAssetCollectionViewController.m */; };
+		1DC897FD1B8D684100DAC969 /* XJAssetCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC897F01B8D684100DAC969 /* XJAssetCollectionViewController.xib */; };
+		1DC897FE1B8D684100DAC969 /* XJAssetHorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC897F21B8D684100DAC969 /* XJAssetHorizontalViewController.m */; };
+		1DC897FF1B8D684100DAC969 /* XJAssetHorizontalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC897F31B8D684100DAC969 /* XJAssetHorizontalViewController.xib */; };
+		1DC898001B8D684100DAC969 /* XJPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC897F51B8D684100DAC969 /* XJPhotoPicker.m */; };
+		1DC898011B8D684100DAC969 /* XJPickeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC897F81B8D684100DAC969 /* XJPickeViewController.m */; };
+		1DC898021B8D684100DAC969 /* XJPickeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC897F91B8D684100DAC969 /* XJPickeViewController.xib */; };
+		1DC898061B8D687700DAC969 /* XJPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC898041B8D687700DAC969 /* XJPhotoPickerViewController.m */; };
+		1DC898071B8D687700DAC969 /* XJPhotoPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC898051B8D687700DAC969 /* XJPhotoPickerViewController.xib */; };
+		1DC898091B8D6C0A00DAC969 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC898081B8D6C0A00DAC969 /* AssetsLibrary.framework */; };
+		1DC8980F1B8D987700DAC969 /* image_picker_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8980B1B8D987700DAC969 /* image_picker_normal@2x.png */; };
+		1DC898101B8D987700DAC969 /* image_picker_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8980C1B8D987700DAC969 /* image_picker_normal@3x.png */; };
+		1DC898111B8D987700DAC969 /* image_picker_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8980D1B8D987700DAC969 /* image_picker_select@2x.png */; };
+		1DC898121B8D987700DAC969 /* image_picker_select@3X.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8980E1B8D987700DAC969 /* image_picker_select@3X.png */; };
+		1DC8981A1B8DCCF600DAC969 /* XJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC898181B8DCCF600DAC969 /* XJTableViewController.m */; };
+		1DC8981B1B8DCCF600DAC969 /* XJTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC898191B8DCCF600DAC969 /* XJTableViewController.xib */; };
 		1DDD1CB61B798DFF006487B4 /* KZWProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD1CB51B798DFF006487B4 /* KZWProgressHUD.m */; };
 		1DDD1CC31B7A03A4006487B4 /* XJBaseJsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD1CC21B7A03A4006487B4 /* XJBaseJsonModel.m */; };
 		1DDD1CCA1B7A0557006487B4 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD1CC51B7A0557006487B4 /* Status.m */; };
@@ -30,7 +54,7 @@
 		1DE7AA9D1B86FD5200DB276B /* XJTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7AA9C1B86FD5200DB276B /* XJTextView.m */; };
 		1DE7AAA11B87035B00DB276B /* XJTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7AA9F1B87035B00DB276B /* XJTextViewController.m */; };
 		1DE7AAA21B87035B00DB276B /* XJTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE7AAA01B87035B00DB276B /* XJTextViewController.xib */; };
-		1DE7AAD41B87277600DB276B /* MyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE7AAD21B87257900DB276B /* MyTest.framework */; };
+		1DEB44961B93F1D100C0BF88 /* image_picker_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DEB44951B93F1D100C0BF88 /* image_picker_back@3x.png */; };
 		1DEDACD51B783BE7002FA6EF /* XJAlertViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDACD31B783BE7002FA6EF /* XJAlertViewViewController.m */; };
 		1DEDACD61B783BE7002FA6EF /* XJAlertViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DEDACD41B783BE7002FA6EF /* XJAlertViewViewController.xib */; };
 		1DEDACDA1B784CAE002FA6EF /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDACD91B784CAE002FA6EF /* BaseRequestService.m */; };
@@ -90,6 +114,10 @@
 /* Begin PBXFileReference section */
 		1D6680981B8B184B0001BEA9 /* XJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJAlertView.h; sourceTree = "<group>"; };
 		1D6680991B8B184B0001BEA9 /* XJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJAlertView.m; sourceTree = "<group>"; };
+		1D7AE9551B9C48AF008D7A6C /* YTKKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKKeyValueStore.h; sourceTree = "<group>"; };
+		1D7AE9561B9C48AF008D7A6C /* YTKKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKKeyValueStore.m; sourceTree = "<group>"; };
+		1D7AE9581B9C48F6008D7A6C /* XJTargetStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJTargetStore.h; sourceTree = "<group>"; };
+		1D7AE9591B9C48F6008D7A6C /* XJTargetStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJTargetStore.m; sourceTree = "<group>"; };
 		1D7E8A391B678A73005491F0 /* XJStudyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XJStudyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7E8A3D1B678A73005491F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D7E8A3E1B678A73005491F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -114,6 +142,39 @@
 		1DC7507E1B68DF0900366AA9 /* XJAddDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJAddDataViewController.h; sourceTree = "<group>"; };
 		1DC7507F1B68DF0900366AA9 /* XJAddDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJAddDataViewController.m; sourceTree = "<group>"; };
 		1DC750801B68DF0900366AA9 /* XJAddDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJAddDataViewController.xib; sourceTree = "<group>"; };
+		1DC897E01B8D683000DAC969 /* XJAssetCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XJAssetCollectionCell.h; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/CellsAndSubViews/XJAssetCollectionCell.h; sourceTree = SOURCE_ROOT; };
+		1DC897E11B8D683000DAC969 /* XJAssetCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XJAssetCollectionCell.m; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/CellsAndSubViews/XJAssetCollectionCell.m; sourceTree = SOURCE_ROOT; };
+		1DC897E21B8D683000DAC969 /* XJAssetCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XJAssetCollectionCell.xib; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/CellsAndSubViews/XJAssetCollectionCell.xib; sourceTree = SOURCE_ROOT; };
+		1DC897E31B8D683000DAC969 /* XJAssetHorizontalViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XJAssetHorizontalViewCell.h; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/CellsAndSubViews/XJAssetHorizontalViewCell.h; sourceTree = SOURCE_ROOT; };
+		1DC897E41B8D683000DAC969 /* XJAssetHorizontalViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XJAssetHorizontalViewCell.m; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/CellsAndSubViews/XJAssetHorizontalViewCell.m; sourceTree = SOURCE_ROOT; };
+		1DC897E51B8D683000DAC969 /* XJAssetHorizontalViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XJAssetHorizontalViewCell.xib; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/CellsAndSubViews/XJAssetHorizontalViewCell.xib; sourceTree = SOURCE_ROOT; };
+		1DC897EA1B8D684100DAC969 /* BAAssetLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAAssetLibrary.h; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/BAAssetLibrary.h; sourceTree = SOURCE_ROOT; };
+		1DC897EB1B8D684100DAC969 /* BAAssetLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAAssetLibrary.m; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/BAAssetLibrary.m; sourceTree = SOURCE_ROOT; };
+		1DC897EC1B8D684100DAC969 /* XJAssetCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XJAssetCellModel.h; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJAssetCellModel.h; sourceTree = SOURCE_ROOT; };
+		1DC897ED1B8D684100DAC969 /* XJAssetCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XJAssetCellModel.m; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJAssetCellModel.m; sourceTree = SOURCE_ROOT; };
+		1DC897EE1B8D684100DAC969 /* XJAssetCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XJAssetCollectionViewController.h; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJAssetCollectionViewController.h; sourceTree = SOURCE_ROOT; };
+		1DC897EF1B8D684100DAC969 /* XJAssetCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XJAssetCollectionViewController.m; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJAssetCollectionViewController.m; sourceTree = SOURCE_ROOT; };
+		1DC897F01B8D684100DAC969 /* XJAssetCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XJAssetCollectionViewController.xib; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJAssetCollectionViewController.xib; sourceTree = SOURCE_ROOT; };
+		1DC897F11B8D684100DAC969 /* XJAssetHorizontalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XJAssetHorizontalViewController.h; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJAssetHorizontalViewController.h; sourceTree = SOURCE_ROOT; };
+		1DC897F21B8D684100DAC969 /* XJAssetHorizontalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XJAssetHorizontalViewController.m; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJAssetHorizontalViewController.m; sourceTree = SOURCE_ROOT; };
+		1DC897F31B8D684100DAC969 /* XJAssetHorizontalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XJAssetHorizontalViewController.xib; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJAssetHorizontalViewController.xib; sourceTree = SOURCE_ROOT; };
+		1DC897F41B8D684100DAC969 /* XJPhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XJPhotoPicker.h; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJPhotoPicker.h; sourceTree = SOURCE_ROOT; };
+		1DC897F51B8D684100DAC969 /* XJPhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XJPhotoPicker.m; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJPhotoPicker.m; sourceTree = SOURCE_ROOT; };
+		1DC897F61B8D684100DAC969 /* XJPhotoPickerTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XJPhotoPickerTypes.h; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJPhotoPickerTypes.h; sourceTree = SOURCE_ROOT; };
+		1DC897F71B8D684100DAC969 /* XJPickeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XJPickeViewController.h; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJPickeViewController.h; sourceTree = SOURCE_ROOT; };
+		1DC897F81B8D684100DAC969 /* XJPickeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XJPickeViewController.m; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJPickeViewController.m; sourceTree = SOURCE_ROOT; };
+		1DC897F91B8D684100DAC969 /* XJPickeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XJPickeViewController.xib; path = XJStudyDemo/XJPhotoPickerDemo/XJPhotoPicker/XJPickeViewController.xib; sourceTree = SOURCE_ROOT; };
+		1DC898031B8D687700DAC969 /* XJPhotoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJPhotoPickerViewController.h; sourceTree = "<group>"; };
+		1DC898041B8D687700DAC969 /* XJPhotoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJPhotoPickerViewController.m; sourceTree = "<group>"; };
+		1DC898051B8D687700DAC969 /* XJPhotoPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJPhotoPickerViewController.xib; sourceTree = "<group>"; };
+		1DC898081B8D6C0A00DAC969 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		1DC8980B1B8D987700DAC969 /* image_picker_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picker_normal@2x.png"; sourceTree = "<group>"; };
+		1DC8980C1B8D987700DAC969 /* image_picker_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picker_normal@3x.png"; sourceTree = "<group>"; };
+		1DC8980D1B8D987700DAC969 /* image_picker_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picker_select@2x.png"; sourceTree = "<group>"; };
+		1DC8980E1B8D987700DAC969 /* image_picker_select@3X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picker_select@3X.png"; sourceTree = "<group>"; };
+		1DC898171B8DCCF600DAC969 /* XJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJTableViewController.h; sourceTree = "<group>"; };
+		1DC898181B8DCCF600DAC969 /* XJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJTableViewController.m; sourceTree = "<group>"; };
+		1DC898191B8DCCF600DAC969 /* XJTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJTableViewController.xib; sourceTree = "<group>"; };
 		1DDD1CB41B798DFF006487B4 /* KZWProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZWProgressHUD.h; sourceTree = "<group>"; };
 		1DDD1CB51B798DFF006487B4 /* KZWProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZWProgressHUD.m; sourceTree = "<group>"; };
 		1DDD1CC11B7A03A4006487B4 /* XJBaseJsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJBaseJsonModel.h; sourceTree = "<group>"; };
@@ -129,7 +190,7 @@
 		1DE7AA9E1B87035B00DB276B /* XJTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJTextViewController.h; sourceTree = "<group>"; };
 		1DE7AA9F1B87035B00DB276B /* XJTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJTextViewController.m; sourceTree = "<group>"; };
 		1DE7AAA01B87035B00DB276B /* XJTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJTextViewController.xib; sourceTree = "<group>"; };
-		1DE7AAD21B87257900DB276B /* MyTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyTest.framework; path = "/Volumes/LiuXJ/个人学习库/个人收藏/XJStudyDemo/XJStudyDemo/MyTest.framework"; sourceTree = "<absolute>"; };
+		1DEB44951B93F1D100C0BF88 /* image_picker_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picker_back@3x.png"; sourceTree = "<group>"; };
 		1DEDACD21B783BE7002FA6EF /* XJAlertViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJAlertViewViewController.h; sourceTree = "<group>"; };
 		1DEDACD31B783BE7002FA6EF /* XJAlertViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJAlertViewViewController.m; sourceTree = "<group>"; };
 		1DEDACD41B783BE7002FA6EF /* XJAlertViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XJAlertViewViewController.xib; sourceTree = "<group>"; };
@@ -191,7 +252,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DE7AAD41B87277600DB276B /* MyTest.framework in Frameworks */,
+				1DC898091B8D6C0A00DAC969 /* AssetsLibrary.framework in Frameworks */,
 				CE9C54420F80C5D25354BB61 /* libPods-XJStudyDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +267,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D7AE9541B9C485C008D7A6C /* BaseDataDB */ = {
+			isa = PBXGroup;
+			children = (
+				1D7AE9551B9C48AF008D7A6C /* YTKKeyValueStore.h */,
+				1D7AE9561B9C48AF008D7A6C /* YTKKeyValueStore.m */,
+				1D7AE9581B9C48F6008D7A6C /* XJTargetStore.h */,
+				1D7AE9591B9C48F6008D7A6C /* XJTargetStore.m */,
+			);
+			path = BaseDataDB;
+			sourceTree = "<group>";
+		};
 		1D7E8A301B678A73005491F0 = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +301,7 @@
 		1D7E8A3B1B678A73005491F0 /* XJStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1DC897DF1B8D67DE00DAC969 /* XJPhotoPickerDemo */,
 				1DE7AA9A1B86FD2200DB276B /* XJTextView */,
 				1DDD1CC01B7A021E006487B4 /* ModelJsonTransform */,
 				1DEDACE61B7898A3002FA6EF /* Categorys */,
@@ -314,6 +387,67 @@
 			path = XJCoreData;
 			sourceTree = "<group>";
 		};
+		1DC897BA1B8D668100DAC969 /* XJPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				1DC8980A1B8D987700DAC969 /* images */,
+				1DC897EA1B8D684100DAC969 /* BAAssetLibrary.h */,
+				1DC897EB1B8D684100DAC969 /* BAAssetLibrary.m */,
+				1DC897EC1B8D684100DAC969 /* XJAssetCellModel.h */,
+				1DC897ED1B8D684100DAC969 /* XJAssetCellModel.m */,
+				1DC897EE1B8D684100DAC969 /* XJAssetCollectionViewController.h */,
+				1DC897EF1B8D684100DAC969 /* XJAssetCollectionViewController.m */,
+				1DC897F01B8D684100DAC969 /* XJAssetCollectionViewController.xib */,
+				1DC897F11B8D684100DAC969 /* XJAssetHorizontalViewController.h */,
+				1DC897F21B8D684100DAC969 /* XJAssetHorizontalViewController.m */,
+				1DC897F31B8D684100DAC969 /* XJAssetHorizontalViewController.xib */,
+				1DC897F41B8D684100DAC969 /* XJPhotoPicker.h */,
+				1DC897F51B8D684100DAC969 /* XJPhotoPicker.m */,
+				1DC897F61B8D684100DAC969 /* XJPhotoPickerTypes.h */,
+				1DC897F71B8D684100DAC969 /* XJPickeViewController.h */,
+				1DC897F81B8D684100DAC969 /* XJPickeViewController.m */,
+				1DC897F91B8D684100DAC969 /* XJPickeViewController.xib */,
+				1DC897BB1B8D675A00DAC969 /* CellsAndSubViews */,
+			);
+			path = XJPhotoPicker;
+			sourceTree = "<group>";
+		};
+		1DC897BB1B8D675A00DAC969 /* CellsAndSubViews */ = {
+			isa = PBXGroup;
+			children = (
+				1DC897E01B8D683000DAC969 /* XJAssetCollectionCell.h */,
+				1DC897E11B8D683000DAC969 /* XJAssetCollectionCell.m */,
+				1DC897E21B8D683000DAC969 /* XJAssetCollectionCell.xib */,
+				1DC897E31B8D683000DAC969 /* XJAssetHorizontalViewCell.h */,
+				1DC897E41B8D683000DAC969 /* XJAssetHorizontalViewCell.m */,
+				1DC897E51B8D683000DAC969 /* XJAssetHorizontalViewCell.xib */,
+			);
+			path = CellsAndSubViews;
+			sourceTree = "<group>";
+		};
+		1DC897DF1B8D67DE00DAC969 /* XJPhotoPickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1DC897BA1B8D668100DAC969 /* XJPhotoPicker */,
+				1DC898031B8D687700DAC969 /* XJPhotoPickerViewController.h */,
+				1DC898041B8D687700DAC969 /* XJPhotoPickerViewController.m */,
+				1DC898051B8D687700DAC969 /* XJPhotoPickerViewController.xib */,
+			);
+			path = XJPhotoPickerDemo;
+			sourceTree = "<group>";
+		};
+		1DC8980A1B8D987700DAC969 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1DC8980B1B8D987700DAC969 /* image_picker_normal@2x.png */,
+				1DC8980C1B8D987700DAC969 /* image_picker_normal@3x.png */,
+				1DC8980D1B8D987700DAC969 /* image_picker_select@2x.png */,
+				1DC8980E1B8D987700DAC969 /* image_picker_select@3X.png */,
+				1DEB44951B93F1D100C0BF88 /* image_picker_back@3x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		1DDD1CC01B7A021E006487B4 /* ModelJsonTransform */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +490,7 @@
 		1DEDACD71B7841B4002FA6EF /* XJHttpRequest */ = {
 			isa = PBXGroup;
 			children = (
+				1D7AE9541B9C485C008D7A6C /* BaseDataDB */,
 				1DEDACD81B784CAE002FA6EF /* BaseRequestService.h */,
 				1DEDACD91B784CAE002FA6EF /* BaseRequestService.m */,
 				1DEDACDB1B787CC1002FA6EF /* BaseDataSource.h */,
@@ -416,6 +551,9 @@
 			isa = PBXGroup;
 			children = (
 				1DFD9F8E1B70C1AC00341099 /* XJCustomCells */,
+				1DC898171B8DCCF600DAC969 /* XJTableViewController.h */,
+				1DC898181B8DCCF600DAC969 /* XJTableViewController.m */,
+				1DC898191B8DCCF600DAC969 /* XJTableViewController.xib */,
 			);
 			path = UITableViewDemo;
 			sourceTree = "<group>";
@@ -469,6 +607,7 @@
 		6420339544B2BAB1B9533C2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1DC898081B8D6C0A00DAC969 /* AssetsLibrary.framework */,
 				CE28DFA7B54EE371AD4FC25E /* libPods-XJStudyDemo.a */,
 			);
 			name = Frameworks;
@@ -570,16 +709,28 @@
 				1DFD9FC51B7492E700341099 /* XJSearchDisplayViewController.xib in Resources */,
 				1DFD9FB61B744F9200341099 /* XJPickerViewController.xib in Resources */,
 				1DFD9F881B70671B00341099 /* XJActionSheetViewController.xib in Resources */,
+				1DC897FD1B8D684100DAC969 /* XJAssetCollectionViewController.xib in Resources */,
 				1DC750701B68A8C200366AA9 /* XJDataListViewController.xib in Resources */,
 				1D7E8A481B678A73005491F0 /* Main.storyboard in Resources */,
+				1DC898111B8D987700DAC969 /* image_picker_select@2x.png in Resources */,
+				1DC8981B1B8DCCF600DAC969 /* XJTableViewController.xib in Resources */,
+				1DC898121B8D987700DAC969 /* image_picker_select@3X.png in Resources */,
 				1D7E8A4D1B678A73005491F0 /* LaunchScreen.xib in Resources */,
+				1DC898021B8D684100DAC969 /* XJPickeViewController.xib in Resources */,
 				1DFD9FCA1B7493B600341099 /* XJSearchViewController.xib in Resources */,
 				1D7E8A4A1B678A73005491F0 /* Images.xcassets in Resources */,
 				1DFD9FA01B72260200341099 /* search_icon@2x.png in Resources */,
+				1DC897E71B8D683000DAC969 /* XJAssetCollectionCell.xib in Resources */,
 				1DC750821B68DF0900366AA9 /* XJAddDataViewController.xib in Resources */,
 				1DFD9FA21B72260700341099 /* search_icon@3x.png in Resources */,
+				1DC898071B8D687700DAC969 /* XJPhotoPickerViewController.xib in Resources */,
+				1DC898101B8D987700DAC969 /* image_picker_normal@3x.png in Resources */,
+				1DC8980F1B8D987700DAC969 /* image_picker_normal@2x.png in Resources */,
 				1DEDACD61B783BE7002FA6EF /* XJAlertViewViewController.xib in Resources */,
+				1DEB44961B93F1D100C0BF88 /* image_picker_back@3x.png in Resources */,
 				1DF2315F1B69D74C004AAAE7 /* XJDataDetailViewController.xib in Resources */,
+				1DC897E91B8D683000DAC969 /* XJAssetHorizontalViewCell.xib in Resources */,
+				1DC897FF1B8D684100DAC969 /* XJAssetHorizontalViewController.xib in Resources */,
 				1DE7AAA21B87035B00DB276B /* XJTextViewController.xib in Resources */,
 				1DEDACE51B78873E002FA6EF /* XJTextRequestViewController.xib in Resources */,
 			);
@@ -637,38 +788,50 @@
 				1DEDACE91B7898E5002FA6EF /* UIColor+XJHexColor.m in Sources */,
 				1DE7AAA11B87035B00DB276B /* XJTextViewController.m in Sources */,
 				1DFD9FC41B7492E700341099 /* XJSearchDisplayViewController.m in Sources */,
+				1DC898061B8D687700DAC969 /* XJPhotoPickerViewController.m in Sources */,
 				1DC750811B68DF0900366AA9 /* XJAddDataViewController.m in Sources */,
 				1DC7506F1B68A8C200366AA9 /* XJDataListViewController.m in Sources */,
 				1DF2315E1B69D74C004AAAE7 /* XJDataDetailViewController.m in Sources */,
 				1D7E8A421B678A73005491F0 /* AppDelegate.m in Sources */,
 				1DC7507A1B68DDBC00366AA9 /* XJCoreData.xcdatamodeld in Sources */,
 				1DFD9F9E1B71F31100341099 /* XJSearchBar.m in Sources */,
+				1DC897FA1B8D684100DAC969 /* BAAssetLibrary.m in Sources */,
+				1DC897E61B8D683000DAC969 /* XJAssetCollectionCell.m in Sources */,
 				1DEDACE01B788328002FA6EF /* XJTestDataSource.m in Sources */,
 				1DFD9FB51B744F9200341099 /* XJPickerViewController.m in Sources */,
 				1DDD1CB61B798DFF006487B4 /* KZWProgressHUD.m in Sources */,
+				1DC8981A1B8DCCF600DAC969 /* XJTableViewController.m in Sources */,
 				1DDD1CCA1B7A0557006487B4 /* Status.m in Sources */,
 				1D7E8A3F1B678A73005491F0 /* main.m in Sources */,
+				1DC897FE1B8D684100DAC969 /* XJAssetHorizontalViewController.m in Sources */,
+				1D7AE95A1B9C48F6008D7A6C /* XJTargetStore.m in Sources */,
 				1D66809A1B8B184B0001BEA9 /* XJAlertView.m in Sources */,
 				1DF231571B69C078004AAAE7 /* UserDetailInfo.m in Sources */,
 				1DDD1CCB1B7A0557006487B4 /* StatusResult.m in Sources */,
 				1DE7AA9D1B86FD5200DB276B /* XJTextView.m in Sources */,
 				1DEDACEC1B789A01002FA6EF /* NSString+XJString.m in Sources */,
+				1DC898001B8D684100DAC969 /* XJPhotoPicker.m in Sources */,
 				1DFD9F871B70671B00341099 /* XJActionSheetViewController.m in Sources */,
 				1DEDACDA1B784CAE002FA6EF /* BaseRequestService.m in Sources */,
 				1DC7507D1B68DEE100366AA9 /* XJBaseViewController.m in Sources */,
 				1DEDACE41B78873E002FA6EF /* XJTextRequestViewController.m in Sources */,
+				1DC897FC1B8D684100DAC969 /* XJAssetCollectionViewController.m in Sources */,
 				1DFD9F991B71F2CB00341099 /* XJSearchBarViewController.m in Sources */,
 				1DFD9FC91B7493B600341099 /* XJSearchViewController.m in Sources */,
+				1DC897FB1B8D684100DAC969 /* XJAssetCellModel.m in Sources */,
 				1DEDACD51B783BE7002FA6EF /* XJAlertViewViewController.m in Sources */,
 				1D7E8A641B678BAB005491F0 /* XJRootViewController.m in Sources */,
 				1DC750771B68DC8B00366AA9 /* XJCoreData.m in Sources */,
 				1DEDACDD1B787CC1002FA6EF /* BaseDataSource.m in Sources */,
 				1DF231541B69C077004AAAE7 /* UserInfo.m in Sources */,
+				1D7AE9571B9C48AF008D7A6C /* YTKKeyValueStore.m in Sources */,
 				1DF2315A1B69CB78004AAAE7 /* XJBaseModel.m in Sources */,
 				1DF231441B69BB85004AAAE7 /* XJDataSource.m in Sources */,
 				1DDD1CC31B7A03A4006487B4 /* XJBaseJsonModel.m in Sources */,
+				1DC897E81B8D683000DAC969 /* XJAssetHorizontalViewCell.m in Sources */,
 				1DFD9F501B7053CC00341099 /* XJActionSheet.m in Sources */,
 				1DFD9F8C1B706AE500341099 /* DebugTools.m in Sources */,
+				1DC898011B8D684100DAC969 /* XJPickeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
