@@ -7,6 +7,8 @@ target 'XJStudyDemo' do
   pod 'MBProgressHUD', '~> 0.9.1'
   pod 'Mantle', '~> 2.0'
   pod 'FMDB'
+  pod 'UITableView+FDTemplateLayoutCell', '~> 1.3'
+  pod 'SVProgressHUD', '~> 1.1.3'
 end
 
 

@@ -10,5 +10,7 @@
 
 @interface XJTestDataSource : BaseDataSource
 - (void)testRequest:(RequestHandle)complete;
+
 - (void)testCacheRequest:(RequestHandle)complete;
+- (void)getHomeRecommentDataWithLng:(NSString *)lngStr lat:(NSString*)lat complete:(RequestHandle)complete;
 @end

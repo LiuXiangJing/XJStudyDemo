@@ -12,6 +12,7 @@
 @end
 
 static NSString *const KZWDBNAME    = @"KZWDataBase.db";
+
 static NSString *const KZWTABLENAME = @"KZWData";
 
 @implementation XJTargetStore
@@ -28,7 +29,7 @@ static NSString *const KZWTABLENAME = @"KZWData";
     return targetStore;
 }
 
-+(void)cacheRequestDataWithData:(id)requestData forKey:(NSString *)key {
++ (void)cacheRequestDataWithData:(id)requestData forKey:(NSString *)key {
     XJTargetStore * targetStore =[XJTargetStore shareTagetStore];
     [targetStore.storeManager putObject:requestData withId:key intoTable:KZWTABLENAME];
 }
@@ -37,8 +38,13 @@ static NSString *const KZWTABLENAME = @"KZWData";
       XJTargetStore * targetStore =[XJTargetStore shareTagetStore];
     return [targetStore.storeManager getObjectById:key fromTable:KZWTABLENAME];
 }
-+ (void)clearRequestData {
-    [[XJTargetStore shareTagetStore].storeManager clearTable:KZWTABLENAME];
++ (void)clearRequestDataWithKey:(NSString *)key {
+    if (key) {
+        [[XJTargetStore shareTagetStore].storeManager deleteObjectById:key fromTable:KZWTABLENAME];
+    }else{
+        
+        [[XJTargetStore shareTagetStore].storeManager clearTable:KZWTABLENAME];
+    }
 }
 + (NSString *)appendAllKeyStringFromArray:(NSArray *)stringArray {
     NSMutableString * keyString =[[NSMutableString alloc]init];

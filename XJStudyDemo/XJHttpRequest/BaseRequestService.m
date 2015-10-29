@@ -182,16 +182,17 @@ static BOOL netWorkReachEnable = YES;
 #pragma mark - iOS 7之后的网络请求
 -(id)sendRequestInfo:(NSDictionary *)requestinfo constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))block complete:(RequestHandle)complete  NS_AVAILABLE_IOS(7_0){
     
-    NSString * cacheKey =requestinfo[BaseRequestCacheRquestKey];
+//    NSString * cacheKey =requestinfo[BaseRequestCacheRquestKey];
     NSURLSessionDataTask * task =[self requesturl:requestinfo[BaseRequestPath] method:requestinfo[BaseRequestMethod] parameters:requestinfo[BaseRequestParameter] constructingBodyWithBlock:block success:^(NSURLSessionDataTask *task, id responseObject) {
-        if(cacheKey){
-            [_requestCache cachedResponseForRequest:task.originalRequest];
-        }
+//        if(cacheKey){
+//            [_requestCache cachedResponseForRequest:task.currentRequest];
+//        }
         complete(YES,@"",@[responseObject]);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        if(error.code ==NSURLErrorNotConnectedToInternet || error.code == NSURLErrorCannotFindHost){
+        /*
+        if(error.code == NSURLErrorNotConnectedToInternet || error.code == NSURLErrorCannotFindHost){
             if(cacheKey){
-                NSCachedURLResponse * response = [self.requestCache cachedResponseForRequest:task.originalRequest];
+                NSCachedURLResponse * response = [self.requestCache cachedResponseForRequest:task.currentRequest];
                 if(response){
                     id respondData = [NSJSONSerialization JSONObjectWithData:response.data options:NSJSONReadingMutableLeaves error:nil];
                     if(respondData){
@@ -208,7 +209,11 @@ static BOOL netWorkReachEnable = YES;
         }else{
             complete(NO,error.localizedDescription,@[error]);
         }
+         */
+        //
+        complete(NO,error.localizedDescription,@[error]);
     }];
+    NSLog(@"task:URL==%@",task.currentRequest);
     return task;
 }
 #pragma mark iOS7 请求汇合
@@ -247,21 +252,21 @@ static BOOL netWorkReachEnable = YES;
                 results =@[];
                 complete(success,errorMsg,results);
             }else if(error.code ==NSURLErrorNotConnectedToInternet || error.code == NSURLErrorCannotFindHost){
-//                NSString * cacheKey =requestInfo[BaseRequestCacheRquestKey];
-//                if (cacheKey) {//是否缓存数据
-//                    NSDictionary * dataDic = [XJTargetStore getRequestDataWithKey:cacheKey];
-//                    if (dataDic) {
-//                        [self handleSuccessDataWithRequestInfo:requestInfo resultData:@[dataDic] complete:complete];
-//                    }else{
-//                        errorMsg = @"没有网络哦~";
-//                        results =@[];
-//                        complete(success,errorMsg,results);
-//                    }
-//                }else{
+                NSString * cacheKey =requestInfo[BaseRequestCacheRquestKey];
+                if (cacheKey) {//是否缓存数据
+                    NSDictionary * dataDic = [XJTargetStore getRequestDataWithKey:cacheKey];
+                    if (dataDic) {
+                        [self handleSuccessDataWithRequestInfo:requestInfo resultData:@[dataDic] complete:complete];
+                    }else{
+                        errorMsg = @"没有网络哦~";
+                        results =@[];
+                        complete(success,errorMsg,results);
+                    }
+                }else{
                     errorMsg = @"没有网络哦~";
                     results =@[];
                     complete(success,errorMsg,results);
-//                }
+                }
             }else if(error.code ==NSURLErrorCancelled){
                 errorMsg =[NSString stringWithString:error.localizedDescription];
                 results =@[];
@@ -284,7 +289,7 @@ static BOOL netWorkReachEnable = YES;
         NSDictionary * dataDic =[results lastObject];
         NSString * cacheKey =requestInfo[BaseRequestCacheRquestKey];
         if (cacheKey) {//是否缓存数据
-//            [XJTargetStore cacheRequestDataWithData:dataDic forKey:cacheKey];
+            [XJTargetStore cacheRequestDataWithData:dataDic forKey:cacheKey];
         }
         NSString * code =[NSString stringWithFormat:@"%@",[dataDic valueForKey:@"code"]];
         if (![code isEqualToString:@"0"]) {

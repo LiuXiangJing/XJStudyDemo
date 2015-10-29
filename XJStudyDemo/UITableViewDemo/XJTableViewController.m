@@ -12,6 +12,8 @@
 @property(nonatomic,strong)NSMutableArray * dataSourceArray;
 @end
 static NSString * cellIdentifier =@"UITableViewCell";
+#import <UITableView+FDTemplateLayoutCell.h>
+
 @implementation XJTableViewController
 
 - (void)viewDidLoad {
@@ -39,7 +41,6 @@ static NSString * cellIdentifier =@"UITableViewCell";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.dataSourceArray count];
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];

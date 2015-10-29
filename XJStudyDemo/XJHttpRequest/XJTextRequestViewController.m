@@ -20,6 +20,7 @@
 #import "StatusResult.h"
 #import "User.h"
 #import "XJTargetStore.h"
+#import <SVProgressHUD.h>
 @implementation XJTextRequestViewController
 
 - (void)viewDidLoad {
@@ -27,9 +28,14 @@
     _dataSource = [XJTestDataSource dataSource];
 }
 - (IBAction)sendARequestAction:(id)sender {
+        [SVProgressHUD setBackgroundColor:[UIColor grayColor]];
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    [SVProgressHUD showWithStatus:@"巴拉巴拉这是一个错误的提示" maskType:SVProgressHUDMaskTypeBlack];
+
+//    [SVProgressHUD showInfoWithStatus:@"巴拉巴拉这是一个错误的提示" ];
     self.resultLabel.text =@"";
     __weak typeof(self)weakSelf =self;
-    [_dataSource testCacheRequest:^(BOOL success, NSString *errorMsg, NSArray *results) {
+    [_dataSource getHomeRecommentDataWithLng:@"" lat:@"" complete:^(BOOL success, NSString *errorMsg, NSArray *results) {
         if (success) {
             weakSelf.resultLabel.text = [results description];
         }else{
@@ -37,8 +43,9 @@
         }
     }];
 }
+
 - (IBAction)clearAllData:(id)sender {
-    [XJTargetStore clearRequestData];
+    [XJTargetStore clearRequestDataWithKey:nil];
 }
 - (IBAction)showTipsAction:(id)sender {
 //    [self reans];

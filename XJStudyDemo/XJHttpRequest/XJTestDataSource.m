@@ -7,6 +7,7 @@
 //
 
 #import "XJTestDataSource.h"
+#define TIMESTAMP [NSString stringWithFormat:@"%ld", (long)[[NSDate  date] timeIntervalSince1970]]
 
 @implementation XJTestDataSource
 - (void)testRequest:(RequestHandle)complete{
@@ -20,7 +21,7 @@
 
 - (void)testCacheRequest:(RequestHandle)complete {
     NSDictionary * dicr =@{
-                           @"_t":@"1441520989",
+                           @"_t":TIMESTAMP,
                            @"kzua":@"Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H141 iPhone6",
                            @"lat":@"",
                            @"lng":@"",
@@ -33,6 +34,17 @@
                                        } complete:complete];
     
 }
-
+- (void)getHomeRecommentDataWithLng:(NSString *)lngStr lat:(NSString *)lat complete:(RequestHandle)complete {
+    NSMutableDictionary * parameterDic =[NSMutableDictionary dictionary];
+    [parameterDic setValue:TIMESTAMP forKey:@"_t"];
+    [parameterDic setValue:@"Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H141 iPhone6" forKey:@"kzua"];
+    [parameterDic setValue:lat forKey:@"lat"];
+    [parameterDic setValue:lngStr forKey:@"lng"];
+    [self.netWorkService sendRequest:@{BaseRequestMethod:@"GET",
+                                       BaseRequestPath:@"app/apiv20/myhome",
+                                       BaseRequestParameter:parameterDic,
+                                       BaseRequestCacheRquestKey:@"app/apiv20/myhome"
+                                       } complete:complete];
+}
 
 @end

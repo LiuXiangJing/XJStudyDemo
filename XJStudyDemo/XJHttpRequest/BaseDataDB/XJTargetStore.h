@@ -22,9 +22,9 @@
  */
 + (id)getRequestDataWithKey:(NSString *)key;
 /**
- *  清除数据
+ *  清除数据(传空则清除所有)
  */
-+ (void)clearRequestData;
++ (void)clearRequestDataWithKey:(NSString *)key;
 
 + (NSString *)appendAllKeyStringFromArray:(NSArray *)stringArray;
 @end
